@@ -1,6 +1,6 @@
 package Day1;
 
-public class laptop {
+public class Laptop {
 
     //States
     //dimension

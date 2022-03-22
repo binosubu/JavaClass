@@ -1,6 +1,6 @@
 package Day1;
 
-public class watch {
+public class Watch {
 
     //States
     //size
