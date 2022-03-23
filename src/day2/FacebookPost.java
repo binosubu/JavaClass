@@ -2,15 +2,17 @@ package day2;
 
 public class FacebookPost {
 
-    //States
+    //States(variables)
     //user
     //taggedUser
     //comment
-    //howManyLikes
-    //howManyComments
-    //howManyShares
+    //images
+    //videos
+    //numberOfLikes
+    //numberOfComments
+    //numberOfShares
 
-    //Behaviour
+    //Behaviour (Methods and functions)
     //expandThePost
     //closeThePost
     //commentTime
