@@ -4,8 +4,8 @@ public class VariableAndConstant {
     public static void main(String[] args) {
         String imageId = "fdjsfjeifj234342";
         imageId = "dlfkj";
-        final String TITLE = "Some Title";
-        // TITLE = "Changed Tittle";
+        final String TITLE = "Fixed Title";
+        // TITLE = "cannot be changed once set into final String";
 
         final String SMALL = "S";
         final String MEDIUM = "M";
@@ -18,13 +18,15 @@ public class VariableAndConstant {
 
         int a = 4;
         int b = 5;
-        int c = a + b;
+        int calc = (a+b)*(a-b);
+        System.out.println("Final ans is " + calc);
 
-        int x = 0;
-        x += 2;     //x = x + 3;
-        x -= 2;     //x = x - 3;
-        x *= 2;     //x = x * 3;
-        x /= 2;     //x = x / 3;
+
+        int x = 10;
+        x += 2;     //x = x + 2;
+        x -= 2;     //x = x - 2;
+        x *= 2;     //x = x * 2;
+        x /= 2;     //x = x / 2;
         System.out.println(x);
     }
 }
