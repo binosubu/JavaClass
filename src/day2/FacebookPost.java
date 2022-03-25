@@ -14,15 +14,11 @@ public class FacebookPost {
     //videos
     String videos;
     //numberOfLikes
-    /*
-    confusion in case of more than 1000 likes it will be like 1.2K likes,
-    so will it be float or int
-     */
-    int numberOfLikes;
+    long numberOfLikes;
     //numberOfComments
-    int numberOfComments;
+    long numberOfComments;
     //numberOfShares
-    int numberOfShares;
+    long numberOfShares;
 
     //Behaviour (Methods and functions)
     //expandThePost
