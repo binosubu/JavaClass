@@ -10,6 +10,7 @@ public class DataTypePractice {
     // for numeric datatype the default value is o
     // static boolean a; for boolean default value is false
     // static char a; for alpha numeric default value is null
+    // static String a; default value is null
 
 
     public static void main(String[] args) {
