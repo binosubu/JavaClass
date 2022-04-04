@@ -26,9 +26,9 @@ public class FindingAgeWithCalendarClass {
         int month = cal.get(Calendar.MONTH) + 1; // 1 is added because JAN starts from 0.
         int date = cal.get(Calendar.DATE);
 
-        LocalDate l1 = LocalDate.of(year, month, date);
-        LocalDate l2 = LocalDate.now();
-        Period age = Period.between(l1, l2);
+        LocalDate ld1 = LocalDate.of(year, month, date);
+        LocalDate ld2 = LocalDate.now();
+        Period age = Period.between(ld1, ld2);
         System.out.println("Your current age is " + age.getYears() + " years " + age.getMonths() + " months " + age.getDays()+ " days.");
 
     }
