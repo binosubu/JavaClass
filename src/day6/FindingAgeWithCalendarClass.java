@@ -29,7 +29,7 @@ public class FindingAgeWithCalendarClass {
         LocalDate ld1 = LocalDate.of(year, month, date);
         LocalDate ld2 = LocalDate.now();
         Period age = Period.between(ld1, ld2);
-        System.out.println("Your current age is " + age.getYears() + " years " + age.getMonths() + " months " + age.getDays()+ " days.");
+        System.out.println("Your current age is " + age.getYears() + " years " + age.getMonths() + " months " + age.getDays() + " days.");
 
     }
 }
