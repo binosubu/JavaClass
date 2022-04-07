@@ -1,29 +1,17 @@
-package day7;
+package day8;
 
 import java.util.Calendar;
 
 public class Employee {
 
-    private String name; //mandatory
-    private int age; //mandatory
-    private double salary; //mandatory
-    private Calendar hireDate; //mandatory
+    private static int employeeCount; // static example; employeeCount will be common for both binod and ram object.
 
-    private String driverLicence; //optional
+    private String name;
+    private int age;
+    private double salary;
+    private Calendar hireDate;
+    private String driverLicence;
 
-    //Default constructor
-    public Employee(){
-        System.out.println("Default Constructor");
-    }
-    /*
-    This is the another method to create an object, but for this we have to make default constructor private
-    and to get the return type we have to go to office.java file and change it into Employee employee = Employee.getInstance();
-
-    public static Employee getInstance(){
-        return new Employee();
-    }
-    */
-    //Parameterized constructor
     public Employee(String name, int age, double salary, Calendar hireDate) {
         this.name = name;
         this.age = age;
@@ -40,42 +28,50 @@ public class Employee {
     }
 
     public String getName() {
-
         return name;
     }
 
     public void setName(String name) {
-
         this.name = name;
     }
 
     public int getAge() {
-
         return age;
     }
 
     public void setAge(int age) {
-
         this.age = age;
     }
 
     public double getSalary() {
-
         return salary;
     }
 
     public void setSalary(double salary) {
-
         this.salary = salary;
     }
 
     public Calendar getHireDate() {
-
         return hireDate;
     }
 
     public void setHireDate(Calendar hireDate) {
-
         this.hireDate = hireDate;
+    }
+
+    public void fireEmployee (){
+        System.out.println(this.getName() + " is fired!!"); //this word is implicit parameter.
+    }
+
+    public void promoteEmployee (){
+        System.out.println(this.getName() + " is promoted!!"); // this word is implicit parameter.
+    }
+
+    public static int getEmployeeCount() {
+        return employeeCount;
+    }
+
+    public static void setEmployeeCount(int employeeCount) {
+        Employee.employeeCount = employeeCount;
     }
 }
