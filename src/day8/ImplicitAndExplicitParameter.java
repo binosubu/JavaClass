@@ -12,7 +12,8 @@ public class ImplicitAndExplicitParameter {
         binod.promoteEmployee(); //implicit parameter
 
        // binod.setEmployeeCount(10);
-       // ram.setEmployeeCount(20); //static function is called (meaningless because it is being shared with everyone)
+       // ram.setEmployeeCount(20); //static function is called (meaningless because it is being shared with everyone
+        // should not use static key word lot because it will be difficult for garbage collector to check if the object is used or not
 
        // System.out.println(binod.getEmployeeCount());
 
