@@ -13,12 +13,11 @@ public class ImplicitAndExplicitParameter {
 
        // binod.setEmployeeCount(10);
        // ram.setEmployeeCount(20); //static function is called (meaningless because it is being shared with everyone
-        // should not use static key word lot because it will be difficult for garbage collector to check if the object is used or not
+        //  should not use static key word lot because it will be difficult for garbage collector to check if the object is used or not
 
        // System.out.println(binod.getEmployeeCount());
-
-        Employee.setEmployeeCount(20);
+        int a = 20;
+        Employee.setEmployeeCount(a);
         System.out.println(Employee.getEmployeeCount());
-
     }
 }

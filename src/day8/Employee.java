@@ -26,6 +26,13 @@ public class Employee {
         this.hireDate = hireDate;
         this.driverLicence = driverLicence;
     }
+    /*
+    This is same as above constructor, we are just reducing the code....
+    public Employee(String name, int age, double salary, Calendar hireDate, String driverLicence) {
+        this(name, age, salary, hireDate); should be first line.// importing above code reducing code lines, but should be in came class
+        this.driverLicence = driverLicence;
+    }
+     */
 
     public String getName() {
         return name;
