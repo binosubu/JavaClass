@@ -31,10 +31,5 @@ public class MarksObtained {
         float percentTotal = totalMarks/5;
         System.out.println("The total marks obtained by " + name + " is " + totalMarks + " and percent obtained is " + percentTotal + "%");
 
-
-
-
-
-
     }
 }
